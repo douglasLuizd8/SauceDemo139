@@ -1,0 +1,10 @@
+AULA 28 - Selenium com SpecFlow e Page Object
+
+ANTES DO INTERVALO - Conteúdo aprendido foi a automação de Selenium com SpecFlow
+
+    No terminal rodar o comando:  dotnet test  para que o programa rode o teste;
+
+DEPOIS DO INTERVALO - Selenium com Page Object
+
+
+A primeira parte da aula até o intervalo foi feito com Selenium e SpecFlow. 
