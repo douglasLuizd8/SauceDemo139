@@ -8,3 +8,7 @@ DEPOIS DO INTERVALO - Selenium com Page Object
 
 
 A primeira parte da aula até o intervalo foi feito com Selenium e SpecFlow. 
+
+criar a pasta Pages na raiz do projeto
+Criar o arquivo selectProdutcPo.feature dentro da página Features, o PO do nome do arquivo signifca Page Object
+Ciar três arquivos dentro da página Pages, sendo eles LoginPage.cs, InventoryPage.cs, LoginPage.cs. 
