@@ -3,12 +3,16 @@ AULA 28 - Selenium com SpecFlow e Page Object
 ANTES DO INTERVALO - Conteúdo aprendido foi a automação de Selenium com SpecFlow
 
     No terminal rodar o comando:  dotnet test  para que o programa rode o teste;
+    ao final do intervalo enviei as mudanças para o github
 
 DEPOIS DO INTERVALO - Selenium com Page Object
 
+    - Criar a pasta Pages na raiz do projeto
+    - Criar o arquivo selectProdutcPo.feature dentro da página Features, o PO do nome do arquivo signifca
+     Page Object
+    - Ciar três arquivos dentro da página Pages, sendo eles LoginPage.cs, InventoryPage.cs, LoginPage.cs. 
+    - Ao final da aula enviei as mudanças para o github
 
-A primeira parte da aula até o intervalo foi feito com Selenium e SpecFlow. 
-
-criar a pasta Pages na raiz do projeto
-Criar o arquivo selectProdutcPo.feature dentro da página Features, o PO do nome do arquivo signifca Page Object
-Ciar três arquivos dentro da página Pages, sendo eles LoginPage.cs, InventoryPage.cs, LoginPage.cs. 
+AULA 29 - Continuação Page Object - Parte 1
+    - criar o arquivo selectProdutcPo.cs dentro da pasta StepDefinitions
+    
