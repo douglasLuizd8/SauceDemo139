@@ -13,6 +13,18 @@ DEPOIS DO INTERVALO - Selenium com Page Object
     - Ciar três arquivos dentro da página Pages, sendo eles LoginPage.cs, InventoryPage.cs, LoginPage.cs. 
     - Ao final da aula enviei as mudanças para o github
 
-AULA 29 - Continuação Page Object - Parte 1
+AULA 29a - Continuação Page Object - Parte 1
     - criar o arquivo selectProdutcPo.cs dentro da pasta StepDefinitions
+    - rodar o comando dotnet test no terminal para que rode os testes e gere os snippets de testes sugeridos.
+
+AULA 29b - Continuação Page Object - Parte 2 
+
+    - Olhar os blogs Guru 99 e tools QA ensinam outras formas de usar cucumber e 
+    o SpecFlow.
+    - Aula bem simples, mais voltada a corrigir problemas dos alunos. 
+
+AULA 30 - Hooks e Relatório do SpecFlow
+    - criar o arquivo Hooks.cs dentro da pasta StepDefinitions
+    - 
+
     
