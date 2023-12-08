@@ -25,6 +25,7 @@ AULA 29b - Continuação Page Object - Parte 2
 
 AULA 30 - Hooks e Relatório do SpecFlow
     - criar o arquivo Hooks.cs dentro da pasta StepDefinitions
+    - Completar o arquivo selectProductPO.cs
     - 
 
     
