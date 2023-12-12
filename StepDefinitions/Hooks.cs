@@ -1,24 +1,25 @@
-// Bibliotecas
+// Biblotecas
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
 
 // Namespace
-using OpenQA.Selenium;
-using TechTalk.SpecFlow;
-
 namespace StepDefinitionsPO
 {
-    [Binding] // Marcação de que a classe segue o padrçai SpecFlow
-
+    [Binding] // Marcação de que a classe segue o padrão SpecFlow
     public class Hooks
     {
         // Atributos / Objetos
-         private ScenarioContext _scenarioContext; // interno a classe
-         private IWebDriver driver;
+        private ScenarioContext _scenarioContext; // interno a classe
+        private IWebDriver driver;
 
-        // Método / Funções
-        public Hooks(ScenarioContext scenarioContext)
-        {   
+        // Métodos / Funções
+        public Hooks(ScenarioContext scenarioContext) 
+        {
             _scenarioContext = scenarioContext; // externo a classe
-        }
+        } 
 
         [BeforeScenario]
         public void ScenarioSetup()
@@ -41,4 +42,3 @@ namespace StepDefinitionsPO
     }
 
 }
-        

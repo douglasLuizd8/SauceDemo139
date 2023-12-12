@@ -26,6 +26,17 @@ AULA 29b - Continuação Page Object - Parte 2
 AULA 30 - Hooks e Relatório do SpecFlow
     - criar o arquivo Hooks.cs dentro da pasta StepDefinitions
     - Completar o arquivo selectProductPO.cs
-    - 
+    - Executar o comando dotnet test no terminal para que os testes sejam iniciados
+    -Executar o comando dotnet livingdoc no terminal 
+    - Executar o comando dotnet new tool-manifest no terminal
+    - Executar o comando dotnet new tool-manifest no -- force terminal, às vezes não é necessário rodar o
+    presente comando uma vez que o comando anterior não rodou direito.
+    - Executar o comando dotnet tool install --local SpecFlow.Plus.LivingDoc.CLI --version 3.9.57 no
+    terminal afim de instalar o puglin destinado a relatórios
+    - Executar o comando dotnet livingdoc feature-folder C:\iterasys\turma139\SauceDemo139 -t C:\iterasys\turma139\SauceDemo139\bin\Debug\net7.0\TestExecution.json
+    sendo que o comando "C:\iterasys\turma139\SauceDemo139" corresponde a parte do caminho (path) da pasta raiz
+    do meu projeto (SauceDemo139), e já a parte "C:\iterasys\turma139\SauceDemo139\bin\Debug\net7.0\TestExecution.json"
+    corresponde ao caminho (path) do arquivo  "TestExecution.json" que se encontra dentro da pasta bin\Debug\net7.0
+    -  
 
     

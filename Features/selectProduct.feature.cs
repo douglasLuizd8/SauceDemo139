@@ -93,7 +93,7 @@ namespace SauceDemo139.Features
             {
                 this.ScenarioStart();
 #line 5
-        testRunner.Given("que acesso a pagina inicial do site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+        testRunner.Given("que acesso a página inicial do site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 6
         testRunner.When("preencho o usuário como \"standard_user\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -108,7 +108,7 @@ namespace SauceDemo139.Features
         testRunner.When("adiciono o produto \"Sauce Labs Backpack\" ao carrinho", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 10
-        testRunner.And("clico no icone do carrinhos de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+        testRunner.And("clico no icone do carrinho de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 11
         testRunner.Then("exibe a pagina do carrinho com a quantidade \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
@@ -149,10 +149,10 @@ namespace SauceDemo139.Features
             {
                 this.ScenarioStart();
 #line 16
-        testRunner.Given("que acesso a pagina inicial do site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+        testRunner.Given("que acesso a página inicial do site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 17
-        testRunner.When(string.Format("preencho o usuário como {0}", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+        testRunner.When(string.Format("preencho o {0}", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 18
         testRunner.And(string.Format("a senha {0} e clico no botao Login", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -164,7 +164,7 @@ namespace SauceDemo139.Features
         testRunner.When(string.Format("adiciono o produto {0} ao carrinho", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 21
-        testRunner.And("clico no icone do carrinhos de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+        testRunner.And("clico no icone do carrinho de compras", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 22
         testRunner.Then(string.Format("exibe a pagina do carrinho com a quantidade {0}", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");

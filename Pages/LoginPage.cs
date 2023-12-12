@@ -1,8 +1,7 @@
 // Bibliotecas
-
-// Namespace
 using OpenQA.Selenium;
 
+// Namespace
 namespace Pages
 {
 // Classe
@@ -17,7 +16,6 @@ namespace Pages
     // Métodos e Funções
         // Construtor
         public LoginPage(IWebDriver driver) : base(driver){}
-        
 
         // Ações a serem usadas na automação
         public void PreencherUsuario(String usuario)
@@ -30,6 +28,7 @@ namespace Pages
             txtSenha.SendKeys(senha);
         }
 
+
         public void ClicarNoBotaoLogin()
         {
             btnLogin.Click();
@@ -39,5 +38,6 @@ namespace Pages
         {
             txtSenha.SendKeys(Keys.Enter);
         }
+
     }
 }

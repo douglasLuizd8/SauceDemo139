@@ -6,8 +6,8 @@ namespace MyNamespace
 {
     [Binding]
     public class SelectProductPO
-    { 
-        // Atributo / Objetos
+    {
+        // Atributos / Objetos
         private readonly ScenarioContext _scenarioContext;
         private IWebDriver driver;
 
@@ -23,42 +23,43 @@ namespace MyNamespace
             _scenarioContext = scenarioContext;
             driver = (IWebDriver) _scenarioContext["driver"];
         }
-
-        [Given(@"que acesso a pagina inicial do site PO")]
+      
+        [Given(@"que acesso a página inicial do site PO")]
         public void DadoQueAcessoAPaginaInicialDoSitePO()
         {
-            driver.Navigate().GoToUrl("https://www.saucedemo.com/");        
+            driver.Navigate().GoToUrl("https://www.saucedemo.com/");
         }
 
-        [When(@"preencho o usuário como ""(.*)"" PO")]
-        public void QuandoPreenchoOUsuarioComoPO(string usuario)
+        [When(@"preencho o ""(.*)"" PO")]
+        public void QuandoPreenchoOPO(string usuario)
         {
-            loginPage = new LoginPage(driver); // instanciamos a classe 
-            loginPage.PreencherUsuario(usuario);
+           loginPage = new LoginPage(driver); // instanciamos a classe
+           loginPage.PreencherUsuario(usuario);
         }
 
         [When(@"a senha ""(.*)"" e clico no botao Login PO")]
         public void QuandoASenhaEClicoNoBotaoLoginPO(string senha)
         {
             loginPage.PreencherSenha(senha);
-            LoginPage.ClicarNoBotaoLogin();
+            loginPage.ClicarNoBotaoLogin();
         }
 
         [Then(@"exibe ""(.*)"" no titulo da secao PO")]
         public void EntaoExibeNoTituloDaSecaoPO(string tituloSecao)
         {
             inventoryPage = new InventoryPage(driver);
-            Assert.That(inventoryPage.LerTituloDaSecao(), Is.EqualTo(tituloSecao));                        
+            Assert.That(inventoryPage.LerTituloDaSecao(), 
+                        Is.EqualTo(tituloSecao));
         }
 
         [When(@"adiciono o produto ""(.*)"" ao carrinho PO")]
         public void QuandoAdicionoOProdutoAoCarrinhoPO(string produto)
         {
-            inventoryPage.AdicionarAoCarrinho(produto);            
+            inventoryPage.AdicionarAoCarrinho(produto);
         }
 
-        [When(@"clico no icone do carrinhos de compras PO")]
-        public void QuandoClicoNoIconeDoCarrinhosDeComprasPO()
+        [When(@"clico no icone do carrinho de compras PO")]
+        public void QuandoClicoNoIconeDoCarrinhoDeComprasPO()
         {
             inventoryPage.IrParaOCarrinho();
         }
@@ -73,15 +74,13 @@ namespace MyNamespace
         [Then(@"nome do produto ""(.*)"" PO")]
         public void EntaoNomeDoProdutoPO(string produto)
         {
-            Assert.That(cartPage.LerNomeProduto, Is.EqualTo(produto));
+            Assert.That(cartPage.LerNomeProduto(), Is.EqualTo(produto));
         }
 
         [Then(@"o preco como ""(.*)"" PO")]
         public void EntaoOPrecoComoPO(string preco)
         {
-            Assert.That(cartPage.LerPreco, Is.EqualTo(preco));
+            Assert.That(cartPage.LerPreco(), Is.EqualTo(preco));
         }
-
-    } 
+    }
 }
-

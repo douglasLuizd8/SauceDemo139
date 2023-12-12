@@ -2,7 +2,7 @@ using OpenQA.Selenium;
 
 namespace Pages
 {
-    public class InventoryPage : CommonPage //  os dois pontos (:) aqui significa extends
+    public class InventoryPage : CommonPage // extends
     {
         // Mapeamento dos Elementos
         // Como queremos mapear o botão "Add to Cart" e o id muda por produto

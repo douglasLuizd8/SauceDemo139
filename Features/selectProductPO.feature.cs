@@ -96,7 +96,7 @@ namespace SauceDemo139.Features
             argumentsOfScenario.Add("preco", preco);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Selecao de Produto com Sucesso PO", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
-       this.ScenarioInitialize(scenarioInfo);
+    this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
             {
@@ -106,10 +106,10 @@ namespace SauceDemo139.Features
             {
                 this.ScenarioStart();
 #line 5
-        testRunner.Given("que acesso a pagina inicial do site PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+        testRunner.Given("que acesso a página inicial do site PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 6
-        testRunner.When(string.Format("preencho o usuário como {0} PO", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+        testRunner.When(string.Format("preencho o {0} PO", usuario), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 7
         testRunner.And(string.Format("a senha {0} e clico no botao Login PO", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -121,7 +121,7 @@ namespace SauceDemo139.Features
         testRunner.When(string.Format("adiciono o produto {0} ao carrinho PO", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 10
-        testRunner.And("clico no icone do carrinhos de compras PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+        testRunner.And("clico no icone do carrinho de compras PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 11
         testRunner.Then(string.Format("exibe a pagina do carrinho com a quantidade {0} PO", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
